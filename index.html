@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drawing site exam</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <div id="paintArea">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <div class="options">
+
+    <div class="tools" id="tools-section">
+
+      <div class="tools-row">
+
+        <div class="tools-wrapper">
+          <h5><span id="tool-type"></span> Size:</h5>
+          <input type="range" id="pen-slider" value="4" />
+        </div>
+
+        <div class="tools-wrapper">
+          <h5>Color:</h5>
+          <input type="color" id="color-input" />
+        </div>
+
+        <div class="tools-wrapper">
+          <h5>Background Color:</h5>
+          <input type="color" id="color-background" />
+        </div>
+
+      </div>
+
+      <div class="tools-row">
+        <button id="button-clear">Clear</button>
+        <button id="button-pen">Pen</button>
+        <button id="button-erase">Erase</button>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
